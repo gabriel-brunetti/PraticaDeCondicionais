@@ -46,14 +46,17 @@
     switch ($periodo) {
         case 'MANHA':
             $corDeFundo = "aqua";
+            $corFonte = "white";
             break;
 
         case 'TARDE':
             $corDeFundo = "yellow";
+            $corFonte = "black";
             break;
         
         case 'NOITE';
             $corDeFundo = "black";
+            $corFonte = "white";
             break;
 
         default:
@@ -70,7 +73,8 @@
     <title>Prática Condicionais </title>
     <style>
         body {
-            background: ($corDeFundo); 
+            background: <?= $corDeFundo ?>;
+            color: <?= $corFonte ?>; 
         }
     </style>
 </head>
